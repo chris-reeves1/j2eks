@@ -8,6 +8,7 @@ pipeline{
                     sh 'chmod u+x ./kubectl'
                     sh './kubectl get nodes'
                     sh './kubectl create -f pod.yaml'
+                    sh './kubectl get pods'
                     }
                 }    
         }
